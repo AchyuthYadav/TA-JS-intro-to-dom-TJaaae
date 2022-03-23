@@ -326,3 +326,22 @@ let got = {
     },
   ],
 };
+
+let container = document.querySelector(".bigbox")
+
+got.houses.forEach(char => {
+  let div = document.createElement("box")
+  let img = document.createElement("img")
+  img.src = char.img
+  let name = document.createElement("name")
+  name.innerText =char.name
+  let h2 = document.createElement("h2")
+  h2.innerText = char.h2
+  let p = document.createElement("p")
+  p.innerText = char.description
+  let btn = document.createElement("button")
+  btn.innertext = "learn more"
+
+  box.append(img, name, h2, p, button)
+  bibbox.append(box)
+});
